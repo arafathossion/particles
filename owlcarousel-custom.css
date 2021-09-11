@@ -1,0 +1,40 @@
+
+.owl-nav .fa-arrow-circle-o-right{
+    position: absolute;
+    top: 37vh;
+    right: 1px;
+    color:rgba(255, 255, 255, 0.74) !important;
+    font-size: 30px;
+    margin: 0;
+    outline: 0;
+    font-weight: 700;
+}
+.owl-nav .fa-arrow-circle-o-left{
+    position: absolute;
+    top: 37vh;
+    left: 1px;
+    color:rgba(255, 255, 255, 0.74) !important;
+    font-size: 30px;
+    margin: 0;
+    outline: 0;
+    font-weight: 700;
+}
+.owl-nav .fa-arrow-alt-circle-left:hover,.fa-arrow-alt-circle-right:hover{
+    color: palegreen;
+    background-color: rgba(216, 112, 147, 0.74);
+}
+.owl-theme .owl-dots .owl-dot span {
+    width: 20px;
+    height: 10px;
+    transition: all linear .5s;
+    background: #111 !important;
+    display: block;
+    opacity: .5;
+    border-radius: 30px; 
+   
+} 
+.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{
+    opacity: 1 !important;
+    background: rgb(30, 187, 163) !important;
+    width: 40px;
+}

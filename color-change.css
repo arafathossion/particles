@@ -1,0 +1,1489 @@
+body{
+    position: relative;
+}
+
+.color-change-container{
+	width: 150px;
+	height: auto;
+	background-color: #111;
+	position: fixed;
+	top: 100px;
+	left: -151px;
+	transition: all linear .5s;
+	-webkit-transition: all linear .5s;
+	-moz-transition: all linear .5s;
+	-ms-transition: all linear .5s;
+	-o-transition: all linear .5s;
+    z-index: 9999999;
+}
+.color-change-container:hover{
+	left: 0;
+}
+.cog{
+	position: absolute;
+	top: 0;
+	left: 100%;
+    width: 40px;
+	height: 40px;
+	background-color: aqua;
+	text-align: center;
+	line-height: 40px;
+	font-size: 25px;
+}
+.cog .fa-cog{
+	animation-name: example;
+	animation-duration: 1s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-direction: normal;
+}
+.color-change{
+	margin:  auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: row;
+	width: 100px;
+	height: 50px;
+
+}
+.color-checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.color-label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 20px;
+	width: 20px;
+	transform: scale(1.5);
+}
+
+.color-label .ball {
+	background-color: #ffd900;
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 18px;
+	width: 18px;
+	transform: translateX(0px);
+	transition: transform .5s linear;
+}
+.color-label .green-ball {
+	background-color: rgba(68, 189, 50,1.0);
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 18px;
+	width: 18px;
+	transform: translateX(0px);
+	transition: transform .5s linear;
+}
+.color-label .blue-ball {
+	background-color: rgba(140, 122, 230,1);
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 18px;
+	width: 18px;
+	transform: translateX(0px);
+	transition: transform .5s linear;
+}
+.color-label .protoss-pylon-ball {
+	background-color: rgba(0, 168, 255,1);
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 18px;
+	width: 18px;
+	transform: translateX(0px);
+	transition: transform .5s linear;
+}
+.color-label .sweet-garden-ball {
+	background-color: rgba(249, 127, 81,1.0);
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 18px;
+	width: 18px;
+	transform: translateX(0px);
+	transition: transform .5s linear;
+}
+.color-label .light-green-ball {
+	background-color: rgba(144, 238, 144,1.0);
+	border-radius: 50%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 18px;
+	width: 18px;
+	transform: translateX(0px);
+	transition: transform .5s linear;
+}
+
+
+
+
+
+/*****Sky-Color Switch Css Start*****/
+body.sky-color .cog{
+    background-color: rgba(247, 159, 31,1.0);
+    color: rgb(30, 187, 163);
+}
+body.sky-color .typewrite{
+    color: rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .contact-heading-first-span p{
+    color: rgba(247, 159, 31,1.0);
+}
+body.sky-color .about-part-content-span{
+    color: rgba(247, 159, 31,1.0);
+}
+body.sky-color .about-second-img-container::before{
+    background-color: rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .cv-btn{
+    color: rgba(247, 159, 31,1.0);
+    border: 2px solid rgba(247, 159, 31,1.0);
+  
+}
+body.sky-color .cv-btn::before{
+    background-color:rgba(247, 161, 31, 0.5) ;
+    z-index: -87686867 !important;
+}
+body.sky-color .cv-btn:hover{
+    color: rgba(247, 159, 31,1.0);
+    z-index: 34324234234 !important;
+}
+/*...RESUME LEFT...*/
+body.sky-color .resume-left-line::before{
+    background-color: rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .resume-left::before{
+    background-color: rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .resume-left:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.sky-color .single-left-resume{
+    border:1px solid rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .single-left-resume::before{
+    background-color: rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .single-left-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.sky-color #about_part .single-left-resume .single-left-resume-year{
+    border: 1px solid rgba(247, 159, 31,1.0);
+    color: rgba(247, 159, 31,1.0);
+}
+/*...RESUME RIGHT...*/
+body.sky-color .resume-right-line::after{
+    background-color: rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .resume-right::before{
+    background-color: rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .resume-right:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.sky-color .single-right-resume{
+    border:1px solid rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .single-right-resume::before{
+    background-color: rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .single-right-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.sky-color #about_part .single-right-resume .single-right-resume-year{
+    border: 1px solid rgba(247, 159, 31,1.0);
+    color: rgba(247, 159, 31,1.0);
+}
+
+/*****Number Counter Css Start*****/
+body.sky-color .counter{
+    border: 1px solid rgba(247, 159, 31,1.0);
+}
+body.sky-color .counter i{
+    color: rgba(247, 159, 31,1.0) !important;
+}
+
+/*****Service Part Css Start*****/
+
+body.sky-color .service_part_icon .service_part_font_awosome{
+    color: rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .single-service-content:hover .service_part_font_awosome{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+body.sky-color .single-service-content .service_part_shadow{
+    border: 1px solid rgba(247, 159, 31,1.0) ;
+}
+body.sky-color .service_border::before{
+    background-color:  rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .service_border::after{
+    background-color:  rgba(247, 159, 31,1.0) !important;
+}
+body.sky-color .service_heading_part h5{
+    color:rgba(247, 159, 31,1.0) !important;
+}
+/*****Portfolio Css Start*****/
+body.sky-color #myBtnContainer .button{
+    color: rgba(247, 159, 31,1.0);
+	border: 1px solid rgba(247, 159, 31,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+
+body.sky-color #myBtnContainer .button:hover{
+    background-color: #666;
+    color: rgba(247, 159, 31,1.0);
+	border: 1px solid rgba(247, 159, 31,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+/* ****Testimonial Css Start**** */
+body.sky-color .single-testimonial-icon{
+	color:rgba(247, 159, 31,1.0);
+}
+body.sky-color .single-testimonial-regsination .testimonial-name{
+	color:rgba(247, 159, 31,1.0);
+}
+body.sky-color .testimonial-regisnation-first-span{
+	color:rgba(247, 159, 31,1.0);
+}
+body.sky-color .testimonial-regisnation-second-span{
+	color:rgba(247, 159, 31,1.0);
+}
+body.sky-color .single-testimonial-image img{
+	border:2px solid rgba(247, 159, 31,1.0);
+}
+/* ****Blog Css Start**** */
+body.sky-color .single-blog-content-second{
+	background-color:rgba(247, 159, 31,.5) !important;
+}
+body.sky-color .single-blog-heading{
+	color:rgba(247, 159, 31,1) ;
+}
+body.sky-color .single-blog-content:hover .single-blog-content-bottom-top p{
+	color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color .single-blog-content-btn .btn{
+	background-color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color .single-blog-content:hover .single-blog-content-btn .btn{
+	color:rgba(247, 159, 31,1) !important;
+	border:1px solid rgba(247, 159, 31,1) !important;
+	background-color: rgb(255, 255, 255);
+}
+/* ****Form Area Css Start**** */
+body.sky-color form .form-control, form .form-control:focus{
+	color:rgba(247, 159, 31,1) ;
+	background-color: rgba(247, 159, 31,.3) ;;
+}
+body.sky-color form .form-control::-webkit-input-placeholder{
+	color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color form .form-control::-moz-placeholder{
+	color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color form .form-control:-ms-input-placeholder{
+    color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color form .form-control::-ms-input-placeholder{
+    color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color form .form-control::placeholder{
+   color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color .form-btn{
+   background-color:rgba(247, 159, 31,.3) !important;
+}
+
+body.sky-color .form-btn::before{
+   background-color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color .form-btn:hover:before{
+   background-color:rgba(247, 159, 31,1) !important;
+}
+
+/* ****Fotter Css Start**** */
+body.sky-color .my_logo{
+	color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color .social-link-list{
+	border:1px solid rgba(247, 159, 31,1) !important;
+}
+body.sky-color footer h5{
+	color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color .recent-post:hover .recent-post-icon{
+	color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color .contact-info-mail{
+    color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color .contact-info-mail:hover{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+body.sky-color .privacy-policy-link:hover{
+    color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color .term-conditions-link:hover{
+    color:rgba(247, 159, 31,1) !important;
+}
+/*****Bottom To Top Button**** */
+body.sky-color #myBtn{
+	background-color:rgba(247, 159, 31,1) !important;
+}
+body.sky-color #myBtn:hover{
+	color:rgba(247, 159, 31,1) !important;
+	background-color: #555 !important;
+}
+/*****Sky-Color Switch Css End*****/
+
+
+
+
+/*****Green-Color Switch Css Start*****/
+body.green-color .cog{
+    background-color: rgba(68, 189 , 50,1.0);
+    color: rgb(255, 255, 255);
+}
+body.green-color .contact-heading-first-span p{
+    color: rgba(68, 189 , 50,1.0);
+}
+body.green-color .typewrite{
+    color: rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .about-part-content-span{
+    color: rgba(68, 189 , 50,1.0);
+}
+body.green-color .about-second-img-container::before{
+    background-color: rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .cv-btn{
+    color: rgba(68, 189 , 50,1.0);
+    border: 2px solid rgba(68, 189 , 50,1.0);
+  
+}
+body.green-color .cv-btn::before{
+    background-color:rgba(68, 161, 50, 0.5) ;
+    z-index: -87686867 !important;
+}
+body.green-color .cv-btn:hover{
+    color: rgba(68, 189 , 50,1.0);
+    z-index: 34324234234 !important;
+}
+/*...RESUME LEFT...*/
+body.green-color .resume-left-line::before{
+    background-color: rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .resume-left::before{
+    background-color: rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .resume-left:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.green-color .single-left-resume{
+    border:1px solid rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .single-left-resume::before{
+    background-color: rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .single-left-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.green-color #about_part .single-left-resume .single-left-resume-year{
+    border: 1px solid rgba(68, 189 , 50,1.0);
+    color: rgba(68, 189 , 50,1.0);
+}
+/*...RESUME RIGHT...*/
+body.green-color .resume-right-line::after{
+    background-color: rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .resume-right::before{
+    background-color: rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .resume-right:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.green-color .single-right-resume{
+    border:1px solid rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .single-right-resume::before{
+    background-color: rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .single-right-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.green-color #about_part .single-right-resume .single-right-resume-year{
+    border: 1px solid rgba(68, 189 , 50,1.0);
+    color: rgba(68, 189 , 50,1.0);
+}
+
+/*****Number Counter Css Start*****/
+body.green-color .counter{
+    border: 1px solid rgba(68, 189 , 50,1.0);
+}
+body.green-color .counter i{
+    color: rgba(68, 189 , 50,1.0) !important;
+}
+
+/*****Service Part Css Start*****/
+
+body.green-color .service_part_icon .service_part_font_awosome{
+    color: rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .single-service-content:hover .service_part_font_awosome{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+body.green-color .single-service-content .service_part_shadow{
+    border: 1px solid rgba(68, 189 , 50,1.0) ;
+}
+body.green-color .service_border::before{
+    background-color:  rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .service_border::after{
+    background-color:  rgba(68, 189 , 50,1.0) !important;
+}
+body.green-color .service_heading_part h5{
+    color: rgba(68, 189 , 50,1.0) !important;
+}
+/*****Portfolio Css Start*****/
+body.green-color #myBtnContainer .button{
+
+    color: rgba(68, 189 , 50,1.0);
+	border: 1px solid rgba(68, 189 , 50,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+body.green-color #myBtnContainer .button:hover{
+    background-color: #666;
+    color: rgba(68, 189 , 50,1.0);
+	border: 1px solid rgba(68, 189 , 50,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+
+/* ****Testimonial Css Start**** */
+body.green-color .single-testimonial-icon{
+	color:rgba(68, 189 , 50,1.0);
+}
+body.green-color .single-testimonial-regsination .testimonial-name{
+	color:rgba(68, 189 , 50,1.0);
+}
+body.green-color .testimonial-regisnation-first-span{
+	color:rgba(68, 189 , 50,1.0);
+}
+body.green-color .testimonial-regisnation-second-span{
+	color:rgba(68, 189 , 50,1.0);
+}
+body.green-color .single-testimonial-image img{
+	border:2px solid rgba(68, 189 , 50,1.0);
+}
+/* ****Blog Css Start**** */
+body.green-color .single-blog-content-second{
+	background-color:rgba(68, 189 , 50,.5) !important;
+}
+body.green-color .single-blog-heading{
+	color:rgba(68, 189 , 50,1) ;
+}
+body.green-color .single-blog-content:hover .single-blog-content-bottom-top p{
+	color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color .single-blog-content-btn .btn{
+	background-color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color .single-blog-content:hover .single-blog-content-btn .btn{
+	color:rgba(68, 189 , 50,1) !important;
+	border:1px solid rgba(68, 189 , 50,1) !important;
+	background-color: rgb(255, 255, 255);
+}
+/* ****Form Area Css Start**** */
+body.green-color form .form-control, form .form-control:focus{
+	color:rgba(68, 189 , 50,1) ;
+	background-color: rgba(68, 189 , 50,.3) ;;
+}
+body.green-color form .form-control::-webkit-input-placeholder{
+	color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color form .form-control::-moz-placeholder{
+	color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color form .form-control:-ms-input-placeholder{
+    color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color form .form-control::-ms-input-placeholder{
+    color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color form .form-control::placeholder{
+   color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color .form-btn{
+   background-color:rgba(68, 189 , 50,.3) !important;
+}
+
+body.green-color .form-btn::before{
+   background-color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color .form-btn:hover:before{
+   background-color:rgba(68, 189 , 50,1) !important;
+}
+
+/* ****Fotter Css Start**** */
+body.green-color .my_logo{
+	color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color .social-link-list{
+	border:1px solid rgba(68, 189 , 50,1) !important;
+}
+body.green-color footer h5{
+	color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color .recent-post:hover .recent-post-icon{
+	color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color .contact-info-mail{
+   color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color .contact-info-mail:hover{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+body.green-color .privacy-policy-link:hover{
+  color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color .term-conditions-link:hover{
+    color:rgba(68, 189 , 50,1) !important;
+}
+/*****Bottom To Top Button**** */
+body.green-color #myBtn{
+	background-color:rgba(68, 189 , 50,1) !important;
+}
+body.green-color #myBtn:hover{
+	color:rgba(68, 189 , 50,1) !important;
+	background-color: #555 !important;
+}
+/*****Green-Color Switch Css End*****/
+
+
+
+
+/*****Blue-Color Switch Css Start*****/
+body.blue-color .cog{
+    background-color: rgba(140, 122, 230,1.0);
+    color: rgb(0, 255, 217);
+}
+body.blue-color .contact-heading-first-span p{
+    color: rgba(140, 122, 230,1.0);
+}
+body.blue-color .typewrite{
+    color: rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .about-part-content-span{
+    color: rgba(140, 122, 230,1.0);
+}
+body.blue-color .about-second-img-container::before{
+    background-color: rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .cv-btn{
+    color: rgba(140, 122, 230,1.0);
+    border: 2px solid rgba(140, 122, 230,1.0);
+  
+}
+body.blue-color .cv-btn::before{
+    background-color:rgba(140, 122, 230, 0.5) ;
+    z-index: -87686867 !important;
+}
+body.blue-color .cv-btn:hover{
+    color: rgba(140, 122, 230,1.0);
+    z-index: 34324234234 !important;
+}
+/*...RESUME LEFT...*/
+body.blue-color .resume-left-line::before{
+    background-color: rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .resume-left::before{
+    background-color: rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .resume-left:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.blue-color .single-left-resume{
+    border:1px solid rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .single-left-resume::before{
+    background-color: rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .single-left-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.blue-color #about_part .single-left-resume .single-left-resume-year{
+    border: 1px solid rgba(140, 122, 230,1.0);
+    color: rgba(140, 122, 230,1.0);
+}
+/*...RESUME RIGHT...*/
+body.blue-color .resume-right-line::after{
+    background-color: rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .resume-right::before{
+    background-color: rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .resume-right:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.blue-color .single-right-resume{
+    border:1px solid rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .single-right-resume::before{
+    background-color: rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .single-right-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.blue-color #about_part .single-right-resume .single-right-resume-year{
+    border: 1px solid rgba(140, 122, 230,1.0);
+    color: rgba(140, 122, 230,1.0);
+}
+
+/*****Number Counter Css Start*****/
+body.blue-color .counter{
+    border: 1px solid rgba(140, 122, 230,1.0);
+}
+body.blue-color .counter i{
+    color: rgba(140, 122, 230,1.0) !important;
+}
+
+/*****Service Part Css Start*****/
+
+body.blue-color .service_part_icon .service_part_font_awosome{
+    color: rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .single-service-content:hover .service_part_font_awosome{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+body.blue-color .single-service-content .service_part_shadow{
+    border: 1px solid rgba(140, 122, 230,1.0) ;
+}
+body.blue-color .service_border::before{
+    background-color:  rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .service_border::after{
+    background-color:  rgba(140, 122, 230,1.0) !important;
+}
+body.blue-color .service_heading_part h5{
+    color: rgba(140, 122, 230,1.0) !important;
+}
+/*****Portfolio Css Start*****/
+body.blue-color #myBtnContainer .button{
+
+    color: rgba(140, 122, 230,1.0);
+	border: 1px solid rgba(140, 122, 230,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+body.blue-color #myBtnContainer .button:hover{
+    background-color: #666;
+    color: rgba(140, 122, 230,1.0);
+	border: 1px solid rgba(140, 122, 230,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+
+/* ****Testimonial Css Start**** */
+body.blue-color .single-testimonial-icon{
+	color:rgba(140, 122, 230,1.0);
+}
+body.blue-color .single-testimonial-regsination .testimonial-name{
+	color:rgba(140, 122, 230,1.0);
+}
+body.blue-color .testimonial-regisnation-first-span{
+	color:rgba(140, 122, 230,1.0);
+}
+body.blue-color .testimonial-regisnation-second-span{
+	color:rgba(140, 122, 230,1.0);
+}
+body.blue-color .single-testimonial-image img{
+	border:2px solid rgba(140, 122, 230,1.0);
+}
+/* ****Blog Css Start**** */
+body.blue-color .single-blog-content-second{
+	background-color:rgba(140, 122, 230,.5) !important;
+}
+body.blue-color .single-blog-heading{
+	color:rgba(140, 122, 230,1) ;
+}
+body.blue-color .single-blog-content:hover .single-blog-content-bottom-top p{
+	color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color .single-blog-content-btn .btn{
+	background-color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color .single-blog-content:hover .single-blog-content-btn .btn{
+	color:rgba(140, 122, 230,1) !important;
+	border:1px solid rgba(140, 122, 230,1) !important;
+	background-color: rgb(255, 255, 255);
+}
+/* ****Form Area Css Start**** */
+body.blue-color form .form-control, form .form-control:focus{
+	color:rgba(140, 122, 230,1) ;
+	background-color: rgba(140, 122, 230,.3) ;;
+}
+body.blue-color form .form-control::-webkit-input-placeholder{
+	color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color form .form-control::-moz-placeholder{
+	color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color form .form-control:-ms-input-placeholder{
+    color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color form .form-control::-ms-input-placeholder{
+    color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color form .form-control::placeholder{
+   color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color .form-btn{
+   background-color:rgba(140, 122, 230,.3) !important;
+}
+
+body.blue-color .form-btn::before{
+   background-color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color .form-btn:hover:before{
+   background-color:rgba(140, 122, 230,1) !important;
+}
+
+/* ****Fotter Css Start**** */
+body.blue-color .my_logo{
+	color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color .social-link-list{
+	border:1px solid rgba(140, 122, 230,1) !important;
+}
+body.blue-color footer h5{
+	color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color .recent-post:hover .recent-post-icon{
+	color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color .contact-info-mail{
+    color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color .contact-info-mail:hover{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+body.blue-color .privacy-policy-link:hover{
+    color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color .term-conditions-link:hover{
+    color:rgba(140, 122, 230,1) !important;
+}
+/*****Bottom To Top Button**** */
+body.blue-color #myBtn{
+	background-color:rgba(140, 122, 230,1) !important;
+}
+body.blue-color #myBtn:hover{
+	color:rgba(140, 122, 230,1) !important;
+	background-color: #555 !important;
+}
+/*****Blue-Color Switch Css End*****/
+
+
+
+
+/*****Protoss-Pylon-Color Switch Css Start*****/
+body.protoss-pylon-color .cog{
+    background-color: rgba(0, 168, 255,1.0);
+    color: rgb(255, 255, 255);
+}
+body.protoss-pylon-color .contact-heading-first-span p{
+    color: rgba(0, 168, 255,1.0);
+}
+body.protoss-pylon-color .typewrite{
+    color: rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .about-part-content-span{
+    color: rgba(0, 168, 255,1.0);
+}
+body.protoss-pylon-color .about-second-img-container::before{
+    background-color: rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .cv-btn{
+    color: rgba(0, 168, 255,1.0);
+    border: 2px solid rgba(0, 168, 255,1.0);
+  
+}
+body.protoss-pylon-color .cv-btn::before{
+    background-color:rgba(0, 168, 255, 0.5) ;
+    z-index: -87686867 !important;
+}
+body.protoss-pylon-color .cv-btn:hover{
+    color: rgba(0, 168, 255,1.0);
+    z-index: 34324234234 !important;
+}
+/*...RESUME LEFT...*/
+body.protoss-pylon-color .resume-left-line::before{
+    background-color: rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .resume-left::before{
+    background-color: rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .resume-left:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.protoss-pylon-color .single-left-resume{
+    border:1px solid rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .single-left-resume::before{
+    background-color: rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .single-left-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.protoss-pylon-color #about_part .single-left-resume .single-left-resume-year{
+    border: 1px solid rgba(0, 168, 255,1.0);
+    color: rgba(0, 168, 255,1.0);
+}
+/*...RESUME RIGHT...*/
+body.protoss-pylon-color .resume-right-line::after{
+    background-color: rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .resume-right::before{
+    background-color: rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .resume-right:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.protoss-pylon-color .single-right-resume{
+    border:1px solid rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .single-right-resume::before{
+    background-color: rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .single-right-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.protoss-pylon-color #about_part .single-right-resume .single-right-resume-year{
+    border: 1px solid rgba(0, 168, 255,1.0);
+    color: rgba(0, 168, 255,1.0);
+}
+
+/*****Number Counter Css Start*****/
+body.protoss-pylon-color .counter{
+    border: 1px solid rgba(0, 168, 255,1.0);
+}
+body.protoss-pylon-color .counter i{
+    color: rgba(0, 168, 255,1.0) !important;
+}
+
+/*****Service Part Css Start*****/
+
+body.protoss-pylon-color .service_part_icon .service_part_font_awosome{
+    color: rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .single-service-content:hover .service_part_font_awosome{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+body.protoss-pylon-color .single-service-content .service_part_shadow{
+    border: 1px solid rgba(0, 168, 255,1.0) ;
+}
+body.protoss-pylon-color .service_border::before{
+    background-color:  rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .service_border::after{
+    background-color:  rgba(0, 168, 255,1.0) !important;
+}
+body.protoss-pylon-color .service_heading_part h5{
+    color: rgba(0, 168, 255,1.0) !important;
+}
+/*****Portfolio Css Start*****/
+body.protoss-pylon-color #myBtnContainer .button{
+
+    color: rgba(0, 168, 255,1.0);
+	border: 1px solid rgba(0, 168, 255,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+body.protoss-pylon-color #myBtnContainer .button:hover{
+    background-color: #666;
+    color: rgba(0, 168, 255,1.0);
+	border: 1px solid rgba(0, 168, 255,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+/* ****Testimonial Css Start**** */
+body.protoss-pylon-color .single-testimonial-icon{
+	color:rgba(0, 168, 255,1.0);
+}
+body.protoss-pylon-color .single-testimonial-regsination .testimonial-name{
+	color:rgba(0, 168, 255,1.0);
+}
+body.protoss-pylon-color .testimonial-regisnation-first-span{
+	color:rgba(0, 168, 255,1.0);
+}
+body.protoss-pylon-color .testimonial-regisnation-second-span{
+	color:rgba(0, 168, 255,1.0);
+}
+body.protoss-pylon-color .single-testimonial-image img{
+	border:2px solid rgba(0, 168, 255,1.0);
+}
+/* ****Blog Css Start**** */
+body.protoss-pylon-color .single-blog-content-second{
+	background-color:rgba(0, 168, 255,.5) !important;
+}
+body.protoss-pylon-color .single-blog-heading{
+	color:rgba(0, 168, 255,1) ;
+}
+body.protoss-pylon-color .single-blog-content:hover .single-blog-content-bottom-top p{
+	color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color .single-blog-content-btn .btn{
+	background-color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color .single-blog-content:hover .single-blog-content-btn .btn{
+	color:rgba(0, 168, 255,1) !important;
+	border:1px solid rgba(0, 168, 255,1) !important;
+	background-color: rgb(255, 255, 255);
+}
+/* ****Form Area Css Start**** */
+body.protoss-pylon-color form .form-control, form .form-control:focus{
+	color:rgba(0, 168, 255,1) ;
+	background-color: rgba(0, 168, 255,.3) ;;
+}
+body.protoss-pylon-color form .form-control::-webkit-input-placeholder{
+	color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color form .form-control::-moz-placeholder{
+	color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color form .form-control:-ms-input-placeholder{
+    color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color form .form-control::-ms-input-placeholder{
+    color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color form .form-control::placeholder{
+   color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color .form-btn{
+   background-color:rgba(0, 168, 255,.3) !important;
+}
+
+body.protoss-pylon-color .form-btn::before{
+   background-color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color .form-btn:hover:before{
+   background-color:rgba(0, 168, 255,1) !important;
+}
+
+/* ****Fotter Css Start**** */
+body.protoss-pylon-color .my_logo{
+	color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color .social-link-list{
+	border:1px solid rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color footer h5{
+	color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color .recent-post:hover .recent-post-icon{
+	color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color .contact-info-mail{
+	color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color .contact-info-mail:hover{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+body.protoss-pylon-color .privacy-policy-link:hover{
+	color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color .term-conditions-link:hover{
+	color:rgba(0, 168, 255,1) !important;
+}
+/*****Bottom To Top Button**** */
+body.protoss-pylon-color #myBtn{
+	background-color:rgba(0, 168, 255,1) !important;
+}
+body.protoss-pylon-color #myBtn:hover{
+	color:rgba(0, 168, 255,1) !important;
+	background-color: #555 !important;
+}
+/*****Protoss-Pylon-Color Switch Css End*****/
+
+
+
+
+/*****Sweet-Garden-Color Switch Css Start*****/
+body.sweet-garden-color .cog{
+    background-color: rgba(249, 127, 81,1.0);
+    color: rgb(255, 255, 255);
+}
+body.sweet-garden-color .contact-heading-first-span p{
+    color: rgba(249, 127, 81,1.0);
+}
+body.sweet-garden-color .typewrite{
+    color: rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .about-part-content-span{
+    color: rgba(249, 127, 81,1.0);
+}
+body.sweet-garden-color .about-second-img-container::before{
+    background-color: rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .cv-btn{
+    color: rgba(249, 127, 81,1.0);
+    border: 2px solid rgba(249, 127, 81,1.0);
+  
+}
+body.sweet-garden-color .cv-btn::before{
+    background-color:rgba(249, 127, 81, 0.5) ;
+    z-index: -87686867 !important;
+}
+body.sweet-garden-color .cv-btn:hover{
+    color: rgba(249, 127, 81,1.0);
+    z-index: 34324234234 !important;
+}
+/*...RESUME LEFT...*/
+body.sweet-garden-color .resume-left-line::before{
+    background-color: rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .resume-left::before{
+    background-color: rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .resume-left:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.sweet-garden-color .single-left-resume{
+    border:1px solid rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .single-left-resume::before{
+    background-color: rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .single-left-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.sweet-garden-color #about_part .single-left-resume .single-left-resume-year{
+    border: 1px solid rgba(249, 127, 81,1.0);
+    color: rgba(249, 127, 81,1.0);
+}
+/*...RESUME RIGHT...*/
+body.sweet-garden-color .resume-right-line::after{
+    background-color: rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .resume-right::before{
+    background-color: rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .resume-right:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.sweet-garden-color .single-right-resume{
+    border:1px solid rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .single-right-resume::before{
+    background-color: rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .single-right-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.sweet-garden-color #about_part .single-right-resume .single-right-resume-year{
+    border: 1px solid rgba(249, 127, 81,1.0);
+    color: rgba(249, 127, 81,1.0);
+}
+
+/*****Number Counter Css Start*****/
+body.sweet-garden-color .counter{
+    border: 1px solid rgba(249, 127, 81,1.0);
+}
+body.sweet-garden-color .counter i{
+    color: rgba(249, 127, 81,1.0) !important;
+}
+
+/*****Service Part Css Start*****/
+
+body.sweet-garden-color .service_part_icon .service_part_font_awosome{
+    color: rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .single-service-content:hover .service_part_font_awosome{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+body.sweet-garden-color .single-service-content .service_part_shadow{
+    border: 1px solid rgba(249, 127, 81,1.0) ;
+}
+body.sweet-garden-color .service_border::before{
+    background-color:  rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .service_border::after{
+    background-color:  rgba(249, 127, 81,1.0) !important;
+}
+body.sweet-garden-color .service_heading_part h5{
+    color: rgba(249, 127, 81,1.0) !important;
+}
+/*****Portfolio Css Start*****/
+body.sweet-garden-color #myBtnContainer .button{
+
+    color: rgba(249, 127, 81,1.0);
+	border: 1px solid rgba(249, 127, 81,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+body.sweet-garden-color #myBtnContainer .button:hover{
+    background-color: #666;
+    color: rgba(249, 127, 81,1.0);
+	border: 1px solid rgba(249, 127, 81,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+
+/* ****Testimonial Css Start**** */
+body.sweet-garden-color .single-testimonial-icon{
+	color:rgba(249, 127, 81,1.0);
+}
+body.sweet-garden-color .single-testimonial-regsination .testimonial-name{
+	color:rgba(249, 127, 81,1.0);
+}
+body.sweet-garden-color .testimonial-regisnation-first-span{
+	color:rgba(249, 127, 81,1.0);
+}
+body.sweet-garden-color .testimonial-regisnation-second-span{
+	color:rgba(249, 127, 81,1.0);
+}
+body.sweet-garden-color .single-testimonial-image img{
+	border:2px solid rgba(249, 127, 81,1.0);
+}
+/* ****Blog Css Start**** */
+body.sweet-garden-color .single-blog-content-second{
+	background-color:rgba(249, 127, 81,.5) !important;
+}
+body.sweet-garden-color .single-blog-heading{
+	color:rgba(249, 127, 81,1) ;
+}
+body.sweet-garden-color .single-blog-content:hover .single-blog-content-bottom-top p{
+	color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color .single-blog-content-btn .btn{
+	background-color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color .single-blog-content:hover .single-blog-content-btn .btn{
+	color:rgba(249, 127, 81,1) !important;
+	border:1px solid rgba(249, 127, 81,1) !important;
+	background-color: rgb(255, 255, 255);
+}
+/* ****Form Area Css Start**** */
+body.sweet-garden-color form .form-control, form .form-control:focus{
+	color:rgba(249, 127, 81,1) ;
+	background-color: rgba(249, 127, 81,.3) ;;
+}
+body.sweet-garden-color form .form-control::-webkit-input-placeholder{
+	color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color form .form-control::-moz-placeholder{
+	color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color form .form-control:-ms-input-placeholder{
+    color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color form .form-control::-ms-input-placeholder{
+    color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color form .form-control::placeholder{
+   color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color .form-btn{
+   background-color:rgba(249, 127, 81,.3) !important;
+}
+
+body.sweet-garden-color .form-btn::before{
+   background-color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color .form-btn:hover:before{
+   background-color:rgba(249, 127, 81,1) !important;
+}
+
+/* ****Fotter Css Start**** */
+body.sweet-garden-color .my_logo{
+	color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color .social-link-list{
+	border:1px solid rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color footer h5{
+	color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color .recent-post:hover .recent-post-icon{
+	color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color .contact-info-mail{
+	color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color .contact-info-mail:hover{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+body.sweet-garden-color .privacy-policy-link:hover{
+	color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color .term-conditions-link:hover{
+	color:rgba(249, 127, 81,1) !important;
+}
+/*****Bottom To Top Button**** */
+body.sweet-garden-color #myBtn{
+	background-color:rgba(249, 127, 81,1) !important;
+}
+body.sweet-garden-color #myBtn:hover{
+	color:rgba(249, 127, 81,1) !important;
+	background-color: #555 !important;
+}
+/*****Sweet-Garden-Color Switch Css End*****/
+
+
+
+
+/*****Light-Green-Color Switch Css Start*****/
+body.light-green-color .cog{
+    background-color: rgba(144, 238, 144,1.0);
+    color: rgb(0, 0, 0);
+}
+body.light-green-color .contact-heading-first-span p{
+    color: rgba(144, 238, 144,1.0);
+}
+body.light-green-color .typewrite{
+    color: rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .about-part-content-span{
+    color: rgba(144, 238, 144,1.0);
+}
+body.light-green-color .about-second-img-container::before{
+    background-color: rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .cv-btn{
+    color: rgba(144, 238, 144,1.0);
+    border: 2px solid rgba(144, 238, 144,1.0);
+  
+}
+body.light-green-color .cv-btn::before{
+    background-color:rgba(144, 238, 144, 0.5) ;
+    z-index: -87686867 !important;
+}
+body.light-green-color .cv-btn:hover{
+    color: rgba(144, 238, 144,1.0);
+    z-index: 34324234234 !important;
+}
+/*...RESUME LEFT...*/
+body.light-green-color .resume-left-line::before{
+    background-color: rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .resume-left::before{
+    background-color: rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .resume-left:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.light-green-color .single-left-resume{
+    border:1px solid rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .single-left-resume::before{
+    background-color: rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .single-left-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.light-green-color #about_part .single-left-resume .single-left-resume-year{
+    border: 1px solid rgba(144, 238, 144,1.0);
+    color: rgba(144, 238, 144,1.0);
+}
+/*...RESUME RIGHT...*/
+body.light-green-color .resume-right-line::after{
+    background-color: rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .resume-right::before{
+    background-color: rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .resume-right:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.light-green-color .single-right-resume{
+    border:1px solid rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .single-right-resume::before{
+    background-color: rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .single-right-resume:hover::before{
+    background-color: rgb(0, 0, 0) !important;
+}
+body.light-green-color #about_part .single-right-resume .single-right-resume-year{
+    border: 1px solid rgba(144, 238, 144,1.0);
+    color: rgba(144, 238, 144,1.0);
+}
+
+/*****Number Counter Css Start*****/
+body.light-green-color .counter{
+    border: 1px solid rgba(144, 238, 144,1.0);
+}
+body.light-green-color .counter i{
+    color: rgba(144, 238, 144,1.0) !important;
+}
+
+/*****Service Part Css Start*****/
+
+body.light-green-color .service_part_icon .service_part_font_awosome{
+    color: rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .single-service-content:hover .service_part_font_awosome{
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+body.light-green-color .single-service-content .service_part_shadow{
+    border: 1px solid rgba(144, 238, 144,1.0) ;
+}
+body.light-green-color .service_border::before{
+    background-color:  rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .service_border::after{
+    background-color:  rgba(144, 238, 144,1.0) !important;
+}
+body.light-green-color .service_heading_part h5{
+    color: rgba(144, 238, 144,1.0) !important ;
+}
+/*****Portfolio Css Start*****/
+body.light-green-color #myBtnContainer .button{
+
+    color: rgba(144, 238, 144,1.0);
+	border: 1px solid rgba(144, 238, 144,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+body.light-green-color #myBtnContainer .button:hover{
+    background-color: #666;
+    color: rgba(144, 238, 144,1.0);
+	border: 1px solid rgba(144, 238, 144,1.0) !important;
+    outline: none !important;
+    border: none;
+}
+
+/* ****Testimonial Css Start**** */
+body.light-green-color .single-testimonial-icon{
+	color:rgba(144, 238, 144,1.0);
+}
+body.light-green-color .single-testimonial-regsination .testimonial-name{
+	color:rgba(144, 238, 144,1.0);
+}
+body.light-green-color .testimonial-regisnation-first-span{
+	color:rgba(144, 238, 144,1.0);
+}
+body.light-green-color .testimonial-regisnation-second-span{
+	color:rgba(144, 238, 144,1.0);
+}
+body.light-green-color .single-testimonial-image img{
+	border:2px solid rgba(144, 238, 144,1.0);
+}
+/* ****Blog Css Start**** */
+body.light-green-color .single-blog-content-second{
+	background-color:rgba(144, 238, 144,.5) !important;
+}
+body.light-green-color .single-blog-heading{
+	color:rgba(144, 238, 144,1) ;
+}
+body.light-green-color .single-blog-content:hover .single-blog-content-bottom-top p{
+	color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color .single-blog-content-btn .btn{
+	background-color:rgb(144, 238, 144) !important;
+}
+body.light-green-color .single-blog-content:hover .single-blog-content-btn .btn{
+	color:rgba(144, 238, 144,1) !important;
+	border:1px solid rgba(144, 238, 144,1) !important;
+	background-color: rgb(255, 255, 255);
+}
+/* ****Form Area Css Start**** */
+body.light-green-color form .form-control, form .form-control:focus{
+	color:rgba(144, 238, 144,1) ;
+	background-color: rgba(144, 238, 144,.3) ;;
+}
+body.light-green-color form .form-control::-webkit-input-placeholder{
+	color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color form .form-control::-moz-placeholder{
+	color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color form .form-control:-ms-input-placeholder{
+    color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color form .form-control::-ms-input-placeholder{
+    color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color form .form-control::placeholder{
+   color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color .form-btn{
+   background-color:rgba(144, 238, 144,.3) !important;
+}
+
+body.light-green-color .form-btn::before{
+   background-color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color .form-btn:hover:before{
+   background-color:rgba(144, 238, 144,1) !important;
+}
+
+/* ****Fotter Css Start**** */
+body.light-green-color .my_logo{
+	color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color .social-link-list{
+	border:1px solid rgba(144, 238, 144,1) !important;
+}
+body.light-green-color footer h5{
+	color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color .recent-post:hover .recent-post-icon{
+	color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color .contact-info-mail{
+	color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color .contact-info-mail:hover{
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+body.light-green-color .privacy-policy-link:hover{
+	color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color .term-conditions-link:hover{
+	color:rgba(144, 238, 144,1) !important;
+}
+/*****Bottom To Top Button**** */
+body.light-green-color #myBtn{
+	background-color:rgba(144, 238, 144,1) !important;
+}
+body.light-green-color #myBtn:hover{
+	color:rgba(144, 238, 144,1) !important;
+	background-color: #555 !important;
+}
+/*****Light-Green-Color Switch Css End*****/
+
+
+/*****Cog Animation Css Start*****/
+@keyframes example {
+	0% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+    }
+  }

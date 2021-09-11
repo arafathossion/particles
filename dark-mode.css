@@ -1,0 +1,253 @@
+/*****DARK MODE*****/
+.mode-change{
+	display: flex;
+	align-items:flex-end !important;
+	justify-content: flex-end;
+	padding-right:45px;
+	margin-top: 80px;
+	z-index: 956565;
+	position: fixed;
+	top: 4px;
+	right: 18px;
+}
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+.label {
+	background-color: rgb(0, 0, 0);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 24px;
+	width: 50px;
+	transform: scale(1.5);
+	z-index: 956565;
+	border: 1px solid rgb(30, 187, 163);
+}
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 1.78px;
+	left: 3px;
+	height: 18px;
+	width: 18px;
+	transform: translateX(0px);
+	transition: transform .5s linear;
+	z-index: 956565;
+}
+.checkbox:checked + .label .ball {
+	transform: translateX(23px) !important;
+	-webkit-transform: translateX(23px) !important;
+	-moz-transform: translateX(23px) !important;
+	-ms-transform: translateX(23px) !important;
+	-o-transform: translateX(23px) !important;
+	background-color: #292C35;
+	z-index: 956565;
+}
+.fa-moon-o, .fa-sun-o{
+	color: #f1c40f;
+}
+body.dark {
+	background: #292C35;
+}
+body.dark .header_part{
+    background-color: #00000057;
+    overflow: hidden;
+    min-height: 700px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+body.dark .header_part::before{
+    background: #292C35;
+
+}
+body.dark .header_part::after{
+    background: #292C35;
+}
+body.dark .sticky.is-sticky {
+    position: fixed;
+    left: 0;
+    right: 100px !important;
+    top: 0;
+    z-index: 1000;
+    width: 100vw;
+	background-color: rgba(33.33, 33.33, 33.33, .8);
+    color: rgb(30, 187, 163) !important;
+    z-index: 3455666;
+}
+body.dark #about_part .about-content{
+	color: rgba(255, 255, 255, 0.5);
+}
+body.dark #about_part .about-part-heading, .about-content-ul-span{
+	color: rgba(0, 0, 0, 0.8);
+}
+body.dark #about_part .about-content-ul-span-a{
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+body.dark #about_part .single-left-resume{
+	background: #292C35;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	color: rgba(255, 255, 255, 0.5);
+}
+body.dark #about_part .single-left-resume .single-left-resume-content{
+	color: rgba(255, 255, 255, 0.5);
+}
+body.dark #about_part .single-right-resume{
+	background: #292C35;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	color: rgba(255, 255, 255, 0.5);
+}
+body.dark #about_part .single-right-resume .single-right-resume-content{
+	color: rgba(255, 255, 255, 0.5);
+}
+body.dark .contact-heading-second-span{
+    color: rgba(255, 255, 255, 0.5);
+}
+body.dark .contact-heading-three-span{
+    color: rgba(0, 0, 0, 0.5);
+}
+body.dark .contact-heading-line::before{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+body.dark .contact-heading-line::after{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+body.dark #service_part .container {
+	margin: auto auto 0px auto ; 
+}
+body.dark #service_part .service_heading_part h5{
+	color: rgba(30,187,163) ;
+}
+body.dark #service_part .service_heading_part p{
+	color: rgba(255, 255, 255, 0.5);
+	line-height: 25px;
+}
+body.dark #service_part .single-service-content .service_part_font_awosome{
+	color: #1ebba3;
+}
+body.dark #service_part .single-service-content:hover .service_part_font_awosome{
+    color: rgba(255, 255, 255, 0.5);
+}
+body.dark #service_part .service_heading_part{
+    text-align: center;
+    padding: 20px 0px 0 0px;
+    color: rgba(255, 251, 251, 0.5);
+}
+body.dark .column .content{
+	border: 2px solid rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+body.dark #skill_progess_bar{
+	background: #22252c;
+	padding: 0px auto auto auto !important;
+}
+body.dark #skill_progess_bar .progress_bar_inner p{
+	color: rgba(255, 255, 255, 0.5);
+}
+body.dark .barfiller{
+    background: #292C35;
+    border: 1px solid #6c6e748a;
+}
+body.dark #skill_progess_bar .barfiller .tip {
+	color: rgba(255, 255, 255, 0.5) !important;
+}
+body.dark .single-testimonial{
+	padding-bottom: 5px;
+	background: #292C35 !important;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+body.dark .single-testimonial-content{
+    color: rgba(255, 255, 255, 0.5);
+}
+body.dark .single-blog-content{
+    border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+body.dark #portfolio_part{
+	background: #22252c;
+}
+body.dark #myBtnContainer .button {
+    border: none;
+    outline: none;
+    min-height: 40px;
+    min-width: 120px;
+	margin:0px 5px 40px 5px;
+    border-radius: 5px;
+    background: #22252c;
+	border: 1px solid black;
+	color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+	transition: all linear .5s;
+    -webkit-transition: all linear .5s;
+    -moz-transition: all linear .5s;
+    -ms-transition: all linear .5s;
+    -o-transition: all linear .5s;
+}
+body.dark #myBtnContainer .button:hover{
+	background-color: #666;
+    color: rgb(30, 187, 163);
+	border: 1px solid rgb(30, 187, 163) !important;
+}
+body.dark #blog{
+	background: #22252c;
+}
+body.dark .blog .single-blog-content-second{
+	background-color: rgba(255, 255, 255, 0.5);
+}
+body.dark .blog .single-blog-content-three{
+	color: rgba(0, 0, 0, 0.603);
+}
+body.dark .blog .single-blog-content:hover .single-blog-heading{
+	color: rgba(255, 255, 255, 0.5);
+}
+body.dark .blog .single-blog-content-bottom-top p{
+	color: rgba(255, 254, 254, 0.5);
+}
+body.dark .blog .single-blog-content:hover .single-blog-content-bottom-top p{
+	color: #1ebba3;
+}
+body.dark .blog .single-blog-content-btn .btn{
+	color: rgba(255, 255, 255, 0.63);
+	background-color: rgba(30, 187, 163,.5);
+}
+body.dark .blog .single-blog-content:hover .single-blog-content-btn .btn{
+	color: rgb(30, 187, 163);
+	background-color: rgb(255, 255, 255);
+}
+body.dark form .form-control, form .form-control:focus{
+    margin:30px 0 0 0;
+    background: #292C35;
+    color: rgba(255, 255, 255, 0.5);
+    border: 1px solid transparent;
+} 
+body.dark form .form-control, form .form-control:focus{
+    outline: transparent;
+    -webkit-box-shadow:none ;
+    box-shadow:none ;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+body.dark form .form-control::placeholder{
+    color: rgba(255, 255, 255, 0.5) !important;
+} 
+body.dark .form-btn{
+	color: rgba(255, 255, 255, 0.5) !important;
+	background: #292C35 !important;
+	border: 1px solid rgba(0, 0, 0, 0.5);
+}
+body.dark footer{
+	background: #22252c;
+}
